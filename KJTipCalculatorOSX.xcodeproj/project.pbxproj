@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0489B41BF35E96006DC552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489B31BF35E96006DC552 /* AppDelegate.swift */; };
+		4E0489B61BF35E96006DC552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489B51BF35E96006DC552 /* ViewController.swift */; };
+		4E0489B81BF35E96006DC552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0489B71BF35E96006DC552 /* Assets.xcassets */; };
+		4E0489BB1BF35E96006DC552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0489B91BF35E96006DC552 /* Main.storyboard */; };
+		4E0489C61BF35E96006DC552 /* KJTipCalculatorOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489C51BF35E96006DC552 /* KJTipCalculatorOSXTests.swift */; };
+		4E0489D11BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489D01BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E0489C21BF35E96006DC552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0489A81BF35E96006DC552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0489AF1BF35E96006DC552;
+			remoteInfo = KJTipCalculatorOSX;
+		};
+		4E0489CD1BF35E96006DC552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E0489A81BF35E96006DC552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0489AF1BF35E96006DC552;
+			remoteInfo = KJTipCalculatorOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E0489B01BF35E96006DC552 /* KJTipCalculatorOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJTipCalculatorOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0489B31BF35E96006DC552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E0489B51BF35E96006DC552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E0489B71BF35E96006DC552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E0489BA1BF35E96006DC552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E0489BC1BF35E96006DC552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0489C11BF35E96006DC552 /* KJTipCalculatorOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJTipCalculatorOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0489C51BF35E96006DC552 /* KJTipCalculatorOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJTipCalculatorOSXTests.swift; sourceTree = "<group>"; };
+		4E0489C71BF35E96006DC552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0489CC1BF35E96006DC552 /* KJTipCalculatorOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJTipCalculatorOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0489D01BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJTipCalculatorOSXUITests.swift; sourceTree = "<group>"; };
+		4E0489D21BF35E96006DC552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E0489AD1BF35E96006DC552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489BE1BF35E96006DC552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489C91BF35E96006DC552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0489A71BF35E96006DC552 = {
+			isa = PBXGroup;
+			children = (
+				4E0489B21BF35E96006DC552 /* KJTipCalculatorOSX */,
+				4E0489C41BF35E96006DC552 /* KJTipCalculatorOSXTests */,
+				4E0489CF1BF35E96006DC552 /* KJTipCalculatorOSXUITests */,
+				4E0489B11BF35E96006DC552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E0489B11BF35E96006DC552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E0489B01BF35E96006DC552 /* KJTipCalculatorOSX.app */,
+				4E0489C11BF35E96006DC552 /* KJTipCalculatorOSXTests.xctest */,
+				4E0489CC1BF35E96006DC552 /* KJTipCalculatorOSXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E0489B21BF35E96006DC552 /* KJTipCalculatorOSX */ = {
+			isa = PBXGroup;
+			children = (
+				4E0489B31BF35E96006DC552 /* AppDelegate.swift */,
+				4E0489B51BF35E96006DC552 /* ViewController.swift */,
+				4E0489B71BF35E96006DC552 /* Assets.xcassets */,
+				4E0489B91BF35E96006DC552 /* Main.storyboard */,
+				4E0489BC1BF35E96006DC552 /* Info.plist */,
+			);
+			path = KJTipCalculatorOSX;
+			sourceTree = "<group>";
+		};
+		4E0489C41BF35E96006DC552 /* KJTipCalculatorOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0489C51BF35E96006DC552 /* KJTipCalculatorOSXTests.swift */,
+				4E0489C71BF35E96006DC552 /* Info.plist */,
+			);
+			path = KJTipCalculatorOSXTests;
+			sourceTree = "<group>";
+		};
+		4E0489CF1BF35E96006DC552 /* KJTipCalculatorOSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0489D01BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift */,
+				4E0489D21BF35E96006DC552 /* Info.plist */,
+			);
+			path = KJTipCalculatorOSXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E0489AF1BF35E96006DC552 /* KJTipCalculatorOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0489D51BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSX" */;
+			buildPhases = (
+				4E0489AC1BF35E96006DC552 /* Sources */,
+				4E0489AD1BF35E96006DC552 /* Frameworks */,
+				4E0489AE1BF35E96006DC552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJTipCalculatorOSX;
+			productName = KJTipCalculatorOSX;
+			productReference = 4E0489B01BF35E96006DC552 /* KJTipCalculatorOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E0489C01BF35E96006DC552 /* KJTipCalculatorOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0489D81BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSXTests" */;
+			buildPhases = (
+				4E0489BD1BF35E96006DC552 /* Sources */,
+				4E0489BE1BF35E96006DC552 /* Frameworks */,
+				4E0489BF1BF35E96006DC552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0489C31BF35E96006DC552 /* PBXTargetDependency */,
+			);
+			name = KJTipCalculatorOSXTests;
+			productName = KJTipCalculatorOSXTests;
+			productReference = 4E0489C11BF35E96006DC552 /* KJTipCalculatorOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E0489CB1BF35E96006DC552 /* KJTipCalculatorOSXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0489DB1BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSXUITests" */;
+			buildPhases = (
+				4E0489C81BF35E96006DC552 /* Sources */,
+				4E0489C91BF35E96006DC552 /* Frameworks */,
+				4E0489CA1BF35E96006DC552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0489CE1BF35E96006DC552 /* PBXTargetDependency */,
+			);
+			name = KJTipCalculatorOSXUITests;
+			productName = KJTipCalculatorOSXUITests;
+			productReference = 4E0489CC1BF35E96006DC552 /* KJTipCalculatorOSXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E0489A81BF35E96006DC552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kristopher Johnson";
+				TargetAttributes = {
+					4E0489AF1BF35E96006DC552 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					4E0489C01BF35E96006DC552 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4E0489AF1BF35E96006DC552;
+					};
+					4E0489CB1BF35E96006DC552 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4E0489AF1BF35E96006DC552;
+					};
+				};
+			};
+			buildConfigurationList = 4E0489AB1BF35E96006DC552 /* Build configuration list for PBXProject "KJTipCalculatorOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E0489A71BF35E96006DC552;
+			productRefGroup = 4E0489B11BF35E96006DC552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E0489AF1BF35E96006DC552 /* KJTipCalculatorOSX */,
+				4E0489C01BF35E96006DC552 /* KJTipCalculatorOSXTests */,
+				4E0489CB1BF35E96006DC552 /* KJTipCalculatorOSXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E0489AE1BF35E96006DC552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0489B81BF35E96006DC552 /* Assets.xcassets in Resources */,
+				4E0489BB1BF35E96006DC552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489BF1BF35E96006DC552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489CA1BF35E96006DC552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E0489AC1BF35E96006DC552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0489B61BF35E96006DC552 /* ViewController.swift in Sources */,
+				4E0489B41BF35E96006DC552 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489BD1BF35E96006DC552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0489C61BF35E96006DC552 /* KJTipCalculatorOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0489C81BF35E96006DC552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0489D11BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E0489C31BF35E96006DC552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0489AF1BF35E96006DC552 /* KJTipCalculatorOSX */;
+			targetProxy = 4E0489C21BF35E96006DC552 /* PBXContainerItemProxy */;
+		};
+		4E0489CE1BF35E96006DC552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0489AF1BF35E96006DC552 /* KJTipCalculatorOSX */;
+			targetProxy = 4E0489CD1BF35E96006DC552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E0489B91BF35E96006DC552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E0489BA1BF35E96006DC552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E0489D31BF35E96006DC552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E0489D41BF35E96006DC552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E0489D61BF35E96006DC552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E0489D71BF35E96006DC552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4E0489D91BF35E96006DC552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJTipCalculatorOSX.app/Contents/MacOS/KJTipCalculatorOSX";
+			};
+			name = Debug;
+		};
+		4E0489DA1BF35E96006DC552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJTipCalculatorOSX.app/Contents/MacOS/KJTipCalculatorOSX";
+			};
+			name = Release;
+		};
+		4E0489DC1BF35E96006DC552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KJTipCalculatorOSX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4E0489DD1BF35E96006DC552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KJTipCalculatorOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.kristopherjohnson.KJTipCalculatorOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KJTipCalculatorOSX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E0489AB1BF35E96006DC552 /* Build configuration list for PBXProject "KJTipCalculatorOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0489D31BF35E96006DC552 /* Debug */,
+				4E0489D41BF35E96006DC552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0489D51BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0489D61BF35E96006DC552 /* Debug */,
+				4E0489D71BF35E96006DC552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E0489D81BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0489D91BF35E96006DC552 /* Debug */,
+				4E0489DA1BF35E96006DC552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E0489DB1BF35E96006DC552 /* Build configuration list for PBXNativeTarget "KJTipCalculatorOSXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0489DC1BF35E96006DC552 /* Debug */,
+				4E0489DD1BF35E96006DC552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E0489A81BF35E96006DC552 /* Project object */;
+}
