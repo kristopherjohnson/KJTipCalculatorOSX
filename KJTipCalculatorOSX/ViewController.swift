@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var subtotalTextField: NSTextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,5 +25,9 @@ class ViewController: NSViewController {
     }
 
 
+    @IBAction func subtotalClearButtonWasTapped(sender: AnyObject) {
+        subtotalTextField.stringValue = ""
+        subtotalTextField.becomeFirstResponder()
+    }
 }
 
