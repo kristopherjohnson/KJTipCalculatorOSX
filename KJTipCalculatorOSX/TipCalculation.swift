@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2014, 2015 Kristopher Johnson
+Copyright 2015 Kristopher Johnson
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -26,14 +26,14 @@ import Foundation
 // Given subtotal, tip percentage, and number in party, calculates tip, total, and per-person split
 class TipCalculation: NSObject {
     // Properties bound to input fields
-    dynamic var subtotal: Double   = 10 { didSet { updateDependentProperties() } }
-    dynamic var tipPercentage: Int = 20 { didSet { updateDependentProperties() } }
-    dynamic var numberInParty: Int = 1  { didSet { updateDependentProperties() } }
+    dynamic var subtotal: NSNumber? = 10 { didSet { updateDependentProperties() } }
+    dynamic var tipPercentage: NSNumber? = 20 { didSet { updateDependentProperties() } }
+    dynamic var numberInParty: NSNumber? = 1  { didSet { updateDependentProperties() } }
 
     // Properties bound to output fields
-    dynamic var tip: Double       = 0
-    dynamic var total: Double     = 0
-    dynamic var perPerson: Double = 0
+    dynamic var tip: NSNumber?
+    dynamic var total: NSNumber?
+    dynamic var perPerson: NSNumber?
 
     override init() {
         super.init()
@@ -41,8 +41,16 @@ class TipCalculation: NSObject {
     }
 
     private func updateDependentProperties() {
-        tip = (Double(tipPercentage) * 0.01) * subtotal
-        total = subtotal + tip
-        perPerson = numberInParty < 1 ? total : (total / Double(numberInParty))
+        switch (subtotal, tipPercentage, numberInParty) {
+        case let (.Some(subtotal), .Some(tipPercentage), .Some(numberInParty)):
+            tip = (tipPercentage.doubleValue * 0.01) * subtotal.doubleValue
+            total = subtotal.doubleValue + tip!.doubleValue
+            perPerson = numberInParty.integerValue < 1 ? total : (total!.doubleValue / numberInParty.doubleValue)
+        default:
+            tip = nil
+            total = nil
+            perPerson = nil
+        }
+
     }
 }
