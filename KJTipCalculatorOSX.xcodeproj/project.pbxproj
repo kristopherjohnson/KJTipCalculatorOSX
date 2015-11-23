@@ -14,6 +14,8 @@
 		4E0489C61BF35E96006DC552 /* KJTipCalculatorOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489C51BF35E96006DC552 /* KJTipCalculatorOSXTests.swift */; };
 		4E0489D11BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0489D01BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift */; };
 		4E79F62D1BF4C56D00DF91DC /* TipCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79F62C1BF4C56D00DF91DC /* TipCalculation.swift */; };
+		4EAC3EFD1C02BEDB00204A84 /* KJTipCalculatorOSX.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC3EFC1C02BEDB00204A84 /* KJTipCalculatorOSX.sdef */; };
+		4EAC3EFF1C02C51100204A84 /* NSApplication_Scripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC3EFE1C02C51100204A84 /* NSApplication_Scripting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4E0489D01BF35E96006DC552 /* KJTipCalculatorOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJTipCalculatorOSXUITests.swift; sourceTree = "<group>"; };
 		4E0489D21BF35E96006DC552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E79F62C1BF4C56D00DF91DC /* TipCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculation.swift; sourceTree = "<group>"; };
+		4EAC3EFC1C02BEDB00204A84 /* KJTipCalculatorOSX.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KJTipCalculatorOSX.sdef; sourceTree = "<group>"; };
+		4EAC3EFE1C02C51100204A84 /* NSApplication_Scripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSApplication_Scripting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				4E0489B31BF35E96006DC552 /* AppDelegate.swift */,
 				4E0489B71BF35E96006DC552 /* Assets.xcassets */,
 				4E0489BC1BF35E96006DC552 /* Info.plist */,
+				4EAC3EFC1C02BEDB00204A84 /* KJTipCalculatorOSX.sdef */,
 				4E0489B91BF35E96006DC552 /* Main.storyboard */,
+				4EAC3EFE1C02C51100204A84 /* NSApplication_Scripting.swift */,
 				4E79F62C1BF4C56D00DF91DC /* TipCalculation.swift */,
 				4E0489B51BF35E96006DC552 /* ViewController.swift */,
 			);
@@ -230,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAC3EFD1C02BEDB00204A84 /* KJTipCalculatorOSX.sdef in Resources */,
 				4E0489B81BF35E96006DC552 /* Assets.xcassets in Resources */,
 				4E0489BB1BF35E96006DC552 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 				4E0489B61BF35E96006DC552 /* ViewController.swift in Sources */,
 				4E0489B41BF35E96006DC552 /* AppDelegate.swift in Sources */,
 				4E79F62D1BF4C56D00DF91DC /* TipCalculation.swift in Sources */,
+				4EAC3EFF1C02C51100204A84 /* NSApplication_Scripting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

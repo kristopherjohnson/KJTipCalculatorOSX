@@ -1,0 +1,86 @@
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <!-- include the standard suite -->
+    <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+
+    <suite name="Tip Calculator Suite" code="KJts" description="Terminology for KJTipCalculationOSX app.">
+
+        <!-- This app does not have a savable file format, but we need to provide
+             one to prevent the warning ".sdef warning for argument 'FileType' of
+             command 'save' in suite 'Standard Suite': 'saveable file format' is
+             not a valid type name."
+         -->
+        <enumeration name="savable file format" code="savf" hidden="yes">
+            <enumerator name="tipcalc" code="KJfl" description="tip calculator document"/>
+        </enumeration>
+
+        <class
+            name="application"
+            code="capp"
+            description="KJTipCalculatorOSX application"
+            inherits="application">
+
+            <cocoa class="NSApplication"/>
+            <property
+                name="calculator"
+                code="Kcal"
+                type="tip calculator"
+                access="r"
+                description="the tip calculation displayed in the main window">
+                <cocoa key="calculator"/>
+            </property>
+        </class>
+
+        <class
+            name="tip calculator"
+            code="Ktpc"
+            description="a set of inputs and outputs for calculation of tip, total, and split">
+            <cocoa class="KJTipCalculation"/>
+            <property
+                name="subtotal"
+                code="subt"
+                type="number"
+                description="the check subtotal, without tip">
+                <cocoa key="subtotal"/>
+            </property>
+            <property
+                name="percentage"
+                code="perc"
+                type="number"
+                description="the tip percentage to be applied">
+                <cocoa key="tipPercentage"/>
+            </property>
+            <property
+                name="number in party"
+                code="numb"
+                type="number"
+                description="the count of people splitting the check">
+                <cocoa key="numberInParty"/>
+            </property>
+            <property
+                name="tip"
+                code="tip "
+                type="number"
+                access="r"
+                description="the calculated tip">
+                <cocoa key="tip"/>
+            </property>
+            <property
+                name="total"
+                code="tota"
+                type="number"
+                access="r"
+                description="the subtotal plus the tip">
+                <cocoa key="total"/>
+            </property>
+            <property
+                name="per person"
+                code="perp"
+                type="number"
+                access="r"
+                description="the total divided by the number in party">
+                <cocoa key="perPerson"/>
+            </property>
+        </class>
+    </suite>
+</dictionary>

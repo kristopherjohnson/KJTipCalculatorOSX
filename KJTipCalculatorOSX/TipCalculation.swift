@@ -24,6 +24,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import Foundation
 
 // Given subtotal, tip percentage, and number in party, calculates tip, total, and per-person split
+@objc(KJTipCalculation)
 class TipCalculation: NSObject {
     // Properties bound to input fields
     dynamic var subtotal: NSNumber? = 10 { didSet { updateDependentProperties() } }
@@ -52,5 +53,15 @@ class TipCalculation: NSObject {
             perPerson = nil
         }
 
+    }
+
+    // MARK: Scriptability support
+
+    /// Property set by application when it returns a TipCalculation instance
+    /// as a scriptable object.
+    var objSpec: NSScriptObjectSpecifier?
+
+    override var objectSpecifier: NSScriptObjectSpecifier? {
+        return objSpec
     }
 }
