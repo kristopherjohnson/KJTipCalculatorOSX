@@ -19,11 +19,7 @@ extension NSApplication {
     dynamic var calculator: TipCalculation {
         if windows.count > 0 {
             if let vc = windows[0].windowController?.contentViewController as? ViewController {
-                let tc = vc.tipCalculation
-                if tc.objSpec == nil {
-                    tc.objSpec = calculatorObjectSpecifier
-                }
-                return tc
+                return vc.tipCalculation
             }
         }
 
@@ -31,14 +27,15 @@ extension NSApplication {
         // another instance.
         if tc == nil {
             tc = TipCalculation()
-            tc?.objSpec = calculatorObjectSpecifier
         }
         return tc!
     }
+}
 
-    var calculatorObjectSpecifier: NSNameSpecifier {
+extension TipCalculation {
+    override var objectSpecifier: NSScriptObjectSpecifier? {
         let appClassDescription = NSScriptClassDescription(forClass: NSApplication.self)!
-        
+
         return NSNameSpecifier(
             containerClassDescription: appClassDescription,
             containerSpecifier: nil,

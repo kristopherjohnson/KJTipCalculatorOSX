@@ -52,16 +52,5 @@ class TipCalculation: NSObject {
             total = nil
             perPerson = nil
         }
-
-    }
-
-    // MARK: Scriptability support
-
-    /// Property set by application when it returns a TipCalculation instance
-    /// as a scriptable object.
-    var objSpec: NSScriptObjectSpecifier?
-
-    override var objectSpecifier: NSScriptObjectSpecifier? {
-        return objSpec
     }
 }

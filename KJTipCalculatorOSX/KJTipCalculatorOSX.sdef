@@ -3,7 +3,7 @@
     <!-- include the standard suite -->
     <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
 
-    <suite name="Tip Calculator Suite" code="KJts" description="Terminology for KJTipCalculationOSX app.">
+    <suite name="Tip Calculator Suite" code="KJts" description="Scriptable objects for the KJTipCalculationOSX app.">
 
         <!-- This app does not have a savable file format, but we need to provide
              one to prevent the warning ".sdef warning for argument 'FileType' of
@@ -11,13 +11,13 @@
              not a valid type name."
          -->
         <enumeration name="savable file format" code="savf" hidden="yes">
-            <enumerator name="tipcalc" code="KJfl" description="tip calculator document"/>
+            <enumerator name="tipcalc" code="Kfil" description="tip calculator document"/>
         </enumeration>
 
         <class
             name="application"
             code="capp"
-            description="KJTipCalculatorOSX application"
+            description="The KJTipCalculatorOSX application."
             inherits="application">
 
             <cocoa class="NSApplication"/>
@@ -26,7 +26,7 @@
                 code="Kcal"
                 type="tip calculator"
                 access="r"
-                description="the tip calculation displayed in the main window">
+                description="The tip calculator displayed in the main window.">
                 <cocoa key="calculator"/>
             </property>
         </class>
@@ -34,51 +34,51 @@
         <class
             name="tip calculator"
             code="Ktpc"
-            description="a set of inputs and outputs for calculation of tip, total, and split">
+            description="A set of inputs and outputs for calculation of tip, total, and split.">
             <cocoa class="KJTipCalculation"/>
             <property
                 name="subtotal"
-                code="subt"
+                code="Ksub"
                 type="number"
-                description="the check subtotal, without tip">
+                description="The check subtotal, without tip.">
                 <cocoa key="subtotal"/>
             </property>
             <property
                 name="percentage"
-                code="perc"
+                code="Kpct"
                 type="number"
-                description="the tip percentage to be applied">
+                description="The tip percentage to be applied.">
                 <cocoa key="tipPercentage"/>
             </property>
             <property
                 name="number in party"
-                code="numb"
+                code="Knum"
                 type="number"
-                description="the count of people splitting the check">
+                description="The count of people splitting the check.">
                 <cocoa key="numberInParty"/>
             </property>
             <property
                 name="tip"
-                code="tip "
+                code="Ktip"
                 type="number"
                 access="r"
-                description="the calculated tip">
+                description="The calculated tip.">
                 <cocoa key="tip"/>
             </property>
             <property
                 name="total"
-                code="tota"
+                code="Ktot"
                 type="number"
                 access="r"
-                description="the subtotal plus the tip">
+                description="The subtotal plus the tip.">
                 <cocoa key="total"/>
             </property>
             <property
                 name="per person"
-                code="perp"
+                code="Kper"
                 type="number"
                 access="r"
-                description="the total divided by the number in party">
+                description="The total divided by the number in party.">
                 <cocoa key="perPerson"/>
             </property>
         </class>
