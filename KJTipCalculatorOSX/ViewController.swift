@@ -28,7 +28,7 @@ class ViewController: NSViewController {
     @IBOutlet var tipCalculation: TipCalculation!
     @IBOutlet weak var subtotalTextField: NSTextField!
 
-    @IBAction func subtotalClearButtonWasTapped(sender: AnyObject) {
+    @IBAction func subtotalClearButtonWasTapped(_ sender: AnyObject) {
         tipCalculation.subtotal = nil
         subtotalTextField.becomeFirstResponder()
     }

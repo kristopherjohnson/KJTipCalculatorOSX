@@ -34,7 +34,7 @@ extension NSApplication {
 
 extension TipCalculation {
     override var objectSpecifier: NSScriptObjectSpecifier? {
-        let appClassDescription = NSScriptClassDescription(forClass: NSApplication.self)!
+        let appClassDescription = NSScriptClassDescription(for: NSApplication.self)!
 
         return NSNameSpecifier(
             containerClassDescription: appClassDescription,

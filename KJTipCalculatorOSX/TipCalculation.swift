@@ -27,14 +27,14 @@ import Foundation
 @objc(KJTipCalculation)
 class TipCalculation: NSObject {
     // Properties bound to input fields
-    dynamic var subtotal: NSNumber? = 10 { didSet { updateDependentProperties() } }
-    dynamic var tipPercentage: NSNumber? = 20 { didSet { updateDependentProperties() } }
-    dynamic var numberInParty: NSNumber? = 1  { didSet { updateDependentProperties() } }
+    @objc dynamic var subtotal: NSNumber? = 10 { didSet { updateDependentProperties() } }
+    @objc dynamic var tipPercentage: NSNumber? = 20 { didSet { updateDependentProperties() } }
+    @objc dynamic var numberInParty: NSNumber? = 1  { didSet { updateDependentProperties() } }
 
     // Properties bound to output fields
-    dynamic var tip: NSNumber?
-    dynamic var total: NSNumber?
-    dynamic var perPerson: NSNumber?
+    @objc dynamic var tip: NSNumber?
+    @objc dynamic var total: NSNumber?
+    @objc dynamic var perPerson: NSNumber?
 
     override init() {
         super.init()
@@ -43,10 +43,11 @@ class TipCalculation: NSObject {
 
     private func updateDependentProperties() {
         switch (subtotal, tipPercentage, numberInParty) {
-        case let (.Some(subtotal), .Some(tipPercentage), .Some(numberInParty)):
-            tip = (tipPercentage.doubleValue * 0.01) * subtotal.doubleValue
-            total = subtotal.doubleValue + tip!.doubleValue
-            perPerson = numberInParty.integerValue < 1 ? total : (total!.doubleValue / numberInParty.doubleValue)
+        case let (.some(subtotal), .some(tipPercentage), .some(numberInParty)):
+            tip = NSNumber(value: (tipPercentage.doubleValue * 0.01) * subtotal.doubleValue)
+            total = NSNumber(value: subtotal.doubleValue + tip!.doubleValue)
+            perPerson = numberInParty.intValue < 1
+                ? total : NSNumber(value: total!.doubleValue / numberInParty.doubleValue)
         default:
             tip = nil
             total = nil
